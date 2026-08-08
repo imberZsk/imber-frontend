@@ -155,7 +155,7 @@
 
 ![alt text](image-3.png)
 
-配置 `.prettierrc.json`，`prettier-plugin-tailwindcss` 插件也很有必要，之前有写过 [优雅的使用 Tailwind](https://imber-docs.netlify.app/next/tailwind/tw-config.html#%E6%80%8E%E4%B9%88%E4%BC%98%E5%8C%96-tailwind-%E6%9D%82%E4%B9%B1%E7%9A%84%E6%8E%92%E5%BA%8F%E6%96%B9%E5%BC%8F)
+配置 `.prettierrc.json`，`prettier-plugin-tailwindcss` 插件也很有必要，之前有写过 [优雅的使用 Tailwind](https://imber-frontend.netlify.app/docs/next/tailwind/tw-config.html#%E6%80%8E%E4%B9%88%E4%BC%98%E5%8C%96-tailwind-%E6%9D%82%E4%B9%B1%E7%9A%84%E6%8E%92%E5%BA%8F%E6%96%B9%E5%BC%8F)
 
 ```json
 {
@@ -236,7 +236,7 @@ button {
 
 ![alt text](image-9.png)
 
-修改一下 `components.json`，原因之前[思考过](https://imber-docs.netlify.app/next/tailwind/tw-config.html#%E6%80%9D%E8%80%83-tailwind-shadcn)，还是不要混着比较好
+修改一下 `components.json`，原因之前[思考过](https://imber-frontend.netlify.app/docs/next/tailwind/tw-config.html#%E6%80%9D%E8%80%83-tailwind-shadcn)，还是不要混着比较好
 
 ```json
 {

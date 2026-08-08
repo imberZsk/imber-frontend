@@ -17,7 +17,7 @@ hero:
       link: /animation/gsap/useGSAP
     - theme: brand
       text: Web 3D
-      link: https://imber-3d.netlify.app/
+      link: https://imber-frontend.netlify.app/3d/
 
 features:
   - title: Nextjs

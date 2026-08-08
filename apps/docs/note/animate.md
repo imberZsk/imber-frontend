@@ -11,7 +11,7 @@ GSAP 一个老牌的动画库，兼容性好，方便易用，功能强大，最
 
 ### imber Animation
 
-[imber Animation](https://imber-animation.netlify.app/) 是动画 Demo 展示，里面有各种动画效果可以参考，文章下面的所有动画效果，都可以在 [Github 源码仓库](https://github.com/imberZsk/animation) 找到，动画的右上角有查看源码功能，网站部分动画用 GSAP 和 Framer Motion 实现过。
+[imber Animation](https://imber-frontend.netlify.app/animation/) 是动画 Demo 展示，里面有各种动画效果可以参考，文章下面的所有动画效果，都可以在 [Github 源码仓库](https://github.com/imberZsk/imber-frontend/tree/main/apps/animation) 找到，动画的右上角有查看源码功能，网站部分动画用 GSAP 和 Framer Motion 实现过。
 
 <img src="/posts/animate/screenshot.png" alt="imber Animation" />
 
@@ -21,7 +21,7 @@ GSAP 开源后的 SplitText 插件，实现文字拆分动画非常方便，注�
 
 标题，logo 等地方可以使用这个动画
 
-[animation - split](https://imber-animation.netlify.app/animations/split)
+[animation - split](https://imber-frontend.netlify.app/animation/animations/split)
 
 <video src="/posts/animate/split.mov" controls />
 
@@ -83,7 +83,7 @@ export default SplitTextGsap
 
 标题，logo 等地方可以使用这个动画
 
-[animation - blur](https://imber-animation.netlify.app/animations/blur)
+[animation - blur](https://imber-frontend.netlify.app/animation/animations/blur)
 
 <video src="/posts/animate/blur.mov" controls />
 
@@ -178,7 +178,7 @@ GSAP 的 textContent 和 roundProps，可以很方便实现这个效果，Framer
 
 有数字的时候可以考虑这个动画。
 
-[animation - add](https://imber-animation.netlify.app/animations/add)
+[animation - add](https://imber-frontend.netlify.app/animation/animations/add)
 
 <video src="/posts/animate/add.mov" controls />
 
@@ -268,7 +268,7 @@ gsap 使用 stagger 错开动画，framer motion 使用 transition 的 delay 错
 
 列表，网格布局 等地方可以使用这个动画。
 
-[animation - stagger](https://imber-animation.netlify.app/animations/stagger/framer)
+[animation - stagger](https://imber-frontend.netlify.app/animation/animations/stagger/framer)
 
 <video src="/posts/animate/stagger.mov" controls />
 
@@ -320,7 +320,7 @@ gsap.from('.stagger-item', {
 
 适合入场动画，各种有顺序动画，甚至左右布局的模块，可以依次从透明到显示。
 
-[animation - timeline](https://imber-animation.netlify.app/animations/timeline/gsap)
+[animation - timeline](https://imber-frontend.netlify.app/animation/animations/timeline/gsap)
 
 <video src="/posts/animate/timeline.mp4" controls />
 
@@ -376,7 +376,7 @@ export default Framer
 
 适合弹层，有切换关闭效果的动画。
 
-[animation - exit](https://imber-animation.netlify.app/animations/exit/gsap)
+[animation - exit](https://imber-frontend.netlify.app/animation/animations/exit/gsap)
 
 <video src="/posts/animate/exit.mov" controls />
 
@@ -424,9 +424,9 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 适合布局切换，比如 flex 的 flex-start 和 flex-end 切换。
 
-[animation - layout](https://imber-animation.netlify.app/animations/layout)
+[animation - layout](https://imber-frontend.netlify.app/animation/animations/layout)
 
-[animation - flip](https://imber-animation.netlify.app/animations/flip)
+[animation - flip](https://imber-frontend.netlify.app/animation/animations/flip)
 
 <video src="/posts/animate/layout.mov" controls />
 <video src="/posts/animate/flip.mp4" controls />
@@ -467,7 +467,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 适合布局切换，比如 tab 切换。
 
-[animation - tab](https://imber-animation.netlify.app/animations/tab)
+[animation - tab](https://imber-frontend.netlify.app/animation/animations/tab)
 
 <video src="/posts/animate/tab.mov" controls />
 
@@ -489,7 +489,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 使用 GSAP 的时候，这些 scrollTrigger 的 API 配置很关键，对于 Framer Motion 来说，用 whileInView 来做这种动画，不能用 useScroll 和 useTransform 因为无法删掉它们的链接到滚动条效果。
 
-[animation - scroll](https://imber-animation.netlify.app/animations/scroll/gsap)
+[animation - scroll](https://imber-frontend.netlify.app/animation/animations/scroll/gsap)
 
 ```tsx
 useGSAP(() => {
@@ -534,7 +534,7 @@ GSAP 是基于 ScrollTrigger 插件来滚动动画，Framer Motion 是基于 use
 
 适合滚动动画，比如滚动到某个位置时，出现某个元素。
 
-[animation - scroll](https://imber-animation.netlify.app/animations/scroll/gsap)
+[animation - scroll](https://imber-frontend.netlify.app/animation/animations/scroll/gsap)
 
 <video src="/posts/animate/scroll.mp4" controls />
 
@@ -625,7 +625,7 @@ gsap 的 scrub 效果，也就是动画与滚动条绑定，也就是不会直�
 
 还可以用来做局部视差动画
 
-[animation - scrub](https://imber-animation.netlify.app/animations/scrub)
+[animation - scrub](https://imber-frontend.netlify.app/animation/animations/scrub/gsap)
 
 <video src="/posts/animate/scrub.mp4" controls />
 
@@ -654,7 +654,7 @@ useGSAP(() => {
 
 gsap 的 pin 效果，也就是滚动到某个位置时，元素会固定在页面不动，对于 Framer Motion 来说，比较难做和难理解这个效果，方案可以用 paddingBottom 撑开或者给个很高的高度，暂时不做深入研究，还是 GSAP 方便。
 
-[animation - pin](https://imber-animation.netlify.app/animations/pin/gsap)
+[animation - pin](https://imber-frontend.netlify.app/animation/animations/pin/gsap)
 
 <video src="/posts/animate/pin.mp4" controls />
 
@@ -720,7 +720,7 @@ useGSAP(() => {
 
 也就是固定对应的屏，之前写的项目用这个也比较好看，如 [领克 Z10 starbuff](https://www.xjmzstarauto.com/starbuff)，此外除了下面这种，还有种 [snap](https://codepen.io/GreenSock/pen/YzygYvM) 的效果在一些网页里也挺常见
 
-[animation - vertical](https://imber-animation.netlify.app/animations/vertical/gsap)
+[animation - vertical](https://imber-frontend.netlify.app/animation/animations/vertical)
 
 <video src="/posts/animate/vertical.mp4" controls />
 
@@ -752,7 +752,7 @@ useGSAP(() => {
 
 这里麻烦的地方是一个位置计算和 FOUC 问题，暂时用 invisible 优化
 
-[animation - horizontal](https://imber-animation.netlify.app/animations/horizontal/gsap)
+[animation - horizontal](https://imber-frontend.netlify.app/animation/animations/horizontal)
 
 <video src="/posts/animate/horizontal.mp4" controls />
 
@@ -799,7 +799,7 @@ useGSAP(() => {
 
 - data-lag 表示延迟多少秒开始滚动，需要一定时间赶上
 
-[animation - parallax](https://imber-animation.netlify.app/animations/parallax/gsap)
+[animation - parallax](https://imber-frontend.netlify.app/animation/animations/parallax/gsap)
 
 <video src="/posts/animate/parallax.mp4" controls />
 

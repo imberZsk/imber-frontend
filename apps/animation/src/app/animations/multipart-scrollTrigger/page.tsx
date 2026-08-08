@@ -5,6 +5,7 @@ import { gsap } from 'gsap'
 import Image from 'next/image'
 import './section.css'
 import { AnimationSourceStatic } from '@/components/ui/animation-source-static'
+import { ANIMATION_BASE_PATH } from '@/app/const'
 
 const PAGE_CODE = `
 
@@ -218,7 +219,7 @@ const Section = () => {
         {/* 视频 */}
         <div className="video-container relative z-10 h-full bg-white">
           <div className="mx-auto h-full max-w-[1200px]">
-            <video autoPlay className="video h-screen w-full" muted src="/multipart-scrollTrigger/1.mp4"></video>
+            <video autoPlay className="video h-screen w-full" muted src={`${ANIMATION_BASE_PATH}/multipart-scrollTrigger/1.mp4`}></video>
           </div>
           <div className="colorful"></div>
         </div>
@@ -232,7 +233,7 @@ const Section = () => {
 
           {/* 手机框 */}
           <div className="h-[656px] w-[300px]">
-            <Image alt="image" height={656} src="/multipart-scrollTrigger/phone.png" width={300} />
+            <Image alt="image" height={656} src={`${ANIMATION_BASE_PATH}/multipart-scrollTrigger/phone.png`} width={300} />
           </div>
 
           {/* morning */}
@@ -241,7 +242,7 @@ const Section = () => {
               alt="image"
               className="h-full w-full rounded-[26px] object-cover"
               height={656}
-              src="/multipart-scrollTrigger/morning-content.webp"
+              src={`${ANIMATION_BASE_PATH}/multipart-scrollTrigger/morning-content.webp`}
               width={300}
             />
           </div>
@@ -250,7 +251,7 @@ const Section = () => {
               alt=""
               className="h-full w-full object-contain"
               height={306}
-              src="/multipart-scrollTrigger/morning1.webp"
+              src={`${ANIMATION_BASE_PATH}/multipart-scrollTrigger/morning1.webp`}
               width={340}
             />
           </div>
@@ -259,7 +260,7 @@ const Section = () => {
               alt=""
               className="h-full w-full object-contain"
               height={286}
-              src="/multipart-scrollTrigger/morning2.webp"
+              src={`${ANIMATION_BASE_PATH}/multipart-scrollTrigger/morning2.webp`}
               width={340}
             />
           </div>
@@ -268,7 +269,7 @@ const Section = () => {
               alt=""
               className="h-full w-full object-contain"
               height={627}
-              src="/multipart-scrollTrigger/morning3.webp"
+              src={`${ANIMATION_BASE_PATH}/multipart-scrollTrigger/morning3.webp`}
               width={377}
             />
           </div>
@@ -279,7 +280,7 @@ const Section = () => {
               alt="image"
               className="h-full w-full rounded-[26px] object-cover"
               height={656}
-              src="/multipart-scrollTrigger/noon-content.webp"
+              src={`${ANIMATION_BASE_PATH}/multipart-scrollTrigger/noon-content.webp`}
               width={300}
             />
           </div>
@@ -288,7 +289,7 @@ const Section = () => {
               alt=""
               className="h-full w-full object-contain"
               height={306}
-              src="/multipart-scrollTrigger/noon1.webp"
+              src={`${ANIMATION_BASE_PATH}/multipart-scrollTrigger/noon1.webp`}
               width={340}
             />
           </div>
@@ -297,7 +298,7 @@ const Section = () => {
               alt=""
               className="h-full w-full object-contain"
               height={286}
-              src="/multipart-scrollTrigger/noon2.webp"
+              src={`${ANIMATION_BASE_PATH}/multipart-scrollTrigger/noon2.webp`}
               width={340}
             />
           </div>
@@ -306,7 +307,7 @@ const Section = () => {
               alt=""
               className="h-full w-full object-contain"
               height={627}
-              src="/multipart-scrollTrigger/noon3.webp"
+              src={`${ANIMATION_BASE_PATH}/multipart-scrollTrigger/noon3.webp`}
               width={377}
             />
           </div>
@@ -317,7 +318,7 @@ const Section = () => {
               alt="image"
               className="h-full w-full rounded-[26px] object-cover"
               height={656}
-              src="/multipart-scrollTrigger/evening-content.webp"
+              src={`${ANIMATION_BASE_PATH}/multipart-scrollTrigger/evening-content.webp`}
               width={300}
             />
           </div>
@@ -326,7 +327,7 @@ const Section = () => {
               alt=""
               className="h-full w-full object-contain"
               height={306}
-              src="/multipart-scrollTrigger/evening1.webp"
+              src={`${ANIMATION_BASE_PATH}/multipart-scrollTrigger/evening1.webp`}
               width={340}
             />
           </div>
@@ -335,7 +336,7 @@ const Section = () => {
               alt=""
               className="h-full w-full object-contain"
               height={286}
-              src="/multipart-scrollTrigger/evening2.webp"
+              src={`${ANIMATION_BASE_PATH}/multipart-scrollTrigger/evening2.webp`}
               width={340}
             />
           </div>
@@ -344,7 +345,7 @@ const Section = () => {
               alt=""
               className="h-full w-full object-contain"
               height={368}
-              src="/multipart-scrollTrigger/evening3.webp"
+              src={`${ANIMATION_BASE_PATH}/multipart-scrollTrigger/evening3.webp`}
               width={340}
             />
           </div>
@@ -353,7 +354,7 @@ const Section = () => {
               alt=""
               className="h-full w-full object-contain"
               height={171}
-              src="/multipart-scrollTrigger/evening4.webp"
+              src={`${ANIMATION_BASE_PATH}/multipart-scrollTrigger/evening4.webp`}
               width={340}
             />
           </div>
