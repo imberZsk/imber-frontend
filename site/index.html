@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Imber Frontend 收录 Web 动画、Three.js 3D 场景与前端技术文档。"
+    />
+    <title>Imber Frontend | 前端实验与知识库</title>
+    <link rel="icon" href="./assets/avatar.jpeg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <img src="./assets/avatar.jpeg" alt="Imber" />
+        <span>Imber Frontend</span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="#work">作品</a>
+        <a href="#about">关于</a>
+        <a href="https://github.com/imberZsk/imber-frontend">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">FRONTEND LAB / 2026</p>
+          <h1 id="hero-title">让界面拥有<br />清晰的结构与真实的动感。</h1>
+          <p class="hero-description">
+            从高级前端工程实践出发，记录动画、3D 交互与工程知识。这里既是可运行的实验场，也是持续整理的技术档案。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">浏览作品</a>
+            <a class="button secondary" href="https://github.com/imberZsk/imber-frontend">查看源码</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <video autoplay muted loop playsinline poster="./assets/animation-cover.png">
+            <source src="./assets/animation-preview.mp4" type="video/mp4" />
+          </video>
+          <figcaption>Motion study / GSAP + Framer Motion</figcaption>
+        </figure>
+      </section>
+
+      <section class="work-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2 id="work-title">三个方向，一个前端工作台</h2>
+          </div>
+          <p>切换分类，查看可运行示例、场景预览与技术文档。</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="作品分类">
+          <button type="button" role="tab" aria-selected="true" data-tab="animation">动画实验</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="three">3D 场景</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="docs">技术文档</button>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" data-panel="animation">
+          <article class="feature-media">
+            <video autoplay muted loop playsinline poster="./assets/animation-cover.png">
+              <source src="./assets/animation-preview.mp4" type="video/mp4" />
+            </video>
+          </article>
+          <div class="feature-copy">
+            <p class="project-number">01 / MOTION</p>
+            <h3>Web Animation Gallery</h3>
+            <p>用 GSAP 与 Framer Motion 对照实现文字、布局、滚动和时间轴动画，保留可运行示例与源码。</p>
+            <ul>
+              <li>GSAP ScrollTrigger 与时间轴</li>
+              <li>Framer Motion 布局与退出动画</li>
+              <li>响应式视频预览</li>
+            </ul>
+            <a class="text-link" href="/animation">进入动画实验 <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" data-panel="three" hidden>
+          <article class="feature-media">
+            <img src="./assets/three-cover.png" alt="Three.js 3D 场景预览" />
+          </article>
+          <div class="feature-copy">
+            <p class="project-number">02 / THREE.JS</p>
+            <h3>Interactive 3D Scenes</h3>
+            <p>覆盖基础场景、天空盒、全景看房、3D 地球与模型动画，呈现浏览器中的空间交互。</p>
+            <ul>
+              <li>Three.js 场景与材质</li>
+              <li>全景贴图与天空盒</li>
+              <li>GLTF / FBX 模型动画</li>
+            </ul>
+            <a class="text-link" href="/3d">进入 3D 实验 <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" data-panel="docs" hidden>
+          <article class="feature-media">
+            <img src="./assets/docs-cover.png" alt="前端技术文档预览" />
+          </article>
+          <div class="feature-copy">
+            <p class="project-number">03 / KNOWLEDGE</p>
+            <h3>Frontend Notes</h3>
+            <p>围绕 React、Next.js、编辑器、工程化与 AI 编程积累的长篇笔记，保留完整目录和图片资源。</p>
+            <ul>
+              <li>React 与 Next.js 原理</li>
+              <li>编辑器与前端工程化</li>
+              <li>AI 工具与 MCP 实践</li>
+            </ul>
+            <a class="text-link" href="/docs">阅读技术文档 <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">ABOUT THE LAB</p>
+        <div>
+          <h2 id="about-title">不只收藏效果，<br />也追问它为什么成立。</h2>
+          <p>
+            Imber Frontend 将视觉实验、工程实现和知识沉淀放在同一个仓库中。每个方向都保留独立技术栈，统一入口只负责建立清楚的浏览路径。
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Imber Frontend</span>
+      <span>Animation · Three.js · Engineering Notes</span>
+    </footer>
+  </body>
+</html>
