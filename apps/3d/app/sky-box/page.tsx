@@ -2,6 +2,7 @@
 import * as THREE from 'three'
 import { useEffect } from 'react'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
+import { THREE_BASE_PATH } from '@/lib/site'
 
 export default function SkyBox() {
   useEffect(() => {
@@ -21,7 +22,7 @@ export default function SkyBox() {
 
     let boxMaterials: any = []
     picList.forEach((item) => {
-      let texture = new THREE.TextureLoader().load(`/${item}.png`)
+      let texture = new THREE.TextureLoader().load(`${THREE_BASE_PATH}/${item}.png`)
       boxMaterials.push(new THREE.MeshBasicMaterial({ map: texture }))
     })
 

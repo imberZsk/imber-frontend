@@ -2,6 +2,7 @@ import { defineConfig, type DefaultTheme } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/docs/',
   title: 'imber',
   description: 'A VitePress Site',
   vite: {
@@ -16,7 +17,7 @@ export default defineConfig({
       { text: 'Nextjs', link: '/next/next-project' },
       { text: 'Editor', link: '/editor/selection' },
       { text: 'Web Animation', link: '/animation/gsap/useGSAP' },
-      { text: 'Web 3D', link: 'https://imber-3d.netlify.app/' }
+      { text: 'Web 3D', link: 'https://imber-frontend.netlify.app/3d/' }
       // { text: 'Cli', link: '/cli/cli/intro' }
     ],
 

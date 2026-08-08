@@ -5,6 +5,7 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader'
 import { useTheme } from 'next-themes'
+import { THREE_BASE_PATH } from '@/lib/site'
 
 export const useLoadModal = () => {
   const containerRef = useRef<HTMLDivElement>(null) // 添加一个 ref
@@ -85,7 +86,7 @@ export const useLoadModal = () => {
 
       // #region 7、加载模型
       loader.load(
-        '/model/dance.fbx',
+        `${THREE_BASE_PATH}/model/dance.fbx`,
         object => {
           // 模型加入场景
           scene?.add(object)

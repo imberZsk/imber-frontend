@@ -2,6 +2,7 @@
 import * as THREE from 'three'
 import { useEffect, useRef } from 'react'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
+import { THREE_BASE_PATH } from '@/lib/site'
 
 export default function Home() {
   const tipRef = useRef<HTMLDivElement | null>(null)
@@ -17,7 +18,7 @@ export default function Home() {
     camera.position.z = 5
 
     const sphere = new THREE.SphereGeometry(16, 50, 50)
-    const texture = new THREE.TextureLoader().load('/livingRoom.jpg')
+    const texture = new THREE.TextureLoader().load(`${THREE_BASE_PATH}/livingRoom.jpg`)
     const material = new THREE.MeshBasicMaterial({ map: texture })
     const sphereMesh = new THREE.Mesh(sphere, material)
     sphere.scale(16, 16, -16)
@@ -37,7 +38,7 @@ export default function Home() {
 
     const dataList = [
       {
-        image: '/livingRoom.jpg',
+        image: `${THREE_BASE_PATH}/livingRoom.jpg`,
         tipsList: [
           {
             position: { x: -200, y: -4, z: -147 },
@@ -99,7 +100,7 @@ export default function Home() {
     ]
 
     const addTipsSprite = (index = 0) => {
-      let tipTexture = new THREE.TextureLoader().load('/tip.png')
+      let tipTexture = new THREE.TextureLoader().load(`${THREE_BASE_PATH}/tip.png`)
       let material = new THREE.SpriteMaterial({ map: tipTexture })
       // const tipsSpriteList = []
       dataList[index].tipsList.forEach((item) => {

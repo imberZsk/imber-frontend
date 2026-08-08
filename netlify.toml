@@ -5,18 +5,3 @@
 [build.environment]
   NODE_VERSION = "22.16.0"
   PNPM_VERSION = "10.33.0"
-
-[[redirects]]
-  from = "/animation"
-  to = "https://imber-animation.netlify.app/"
-  status = 302
-
-[[redirects]]
-  from = "/3d"
-  to = "https://imber-3d.netlify.app/"
-  status = 302
-
-[[redirects]]
-  from = "/docs"
-  to = "https://imber-docs.netlify.app/"
-  status = 302

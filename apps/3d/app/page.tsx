@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import Image from 'next/image'
+import { THREE_BASE_PATH } from '@/lib/site'
 export default function Page(): JSX.Element {
   return (
     <div className="flex justify-center flex-col lg:pt-40 pt-8 pb-10">
@@ -10,7 +11,7 @@ export default function Page(): JSX.Element {
           <Link href="/normal">
             <div className="w-full h-[45vw] lg:h-[calc((90vw_-_32px_-_6px)/3/2)]">
               <Image
-                src="/normal.gif"
+                src={`${THREE_BASE_PATH}/normal.gif`}
                 width={800}
                 height={400}
                 alt="normal"
@@ -25,7 +26,7 @@ export default function Page(): JSX.Element {
           <Link href="/scene">
             <div className="w-full h-[45vw] lg:h-[calc((90vw_-_32px_-_6px)/3/2)]">
               <Image
-                src="/circle-texture.gif"
+                src={`${THREE_BASE_PATH}/circle-texture.gif`}
                 width={800}
                 height={400}
                 alt="normal"
@@ -40,7 +41,7 @@ export default function Page(): JSX.Element {
           <Link href="/sky-box">
             <div className="w-full h-[45vw] lg:h-[calc((90vw_-_32px_-_6px)/3/2)]">
               <Image
-                src="/circle-texture.gif"
+                src={`${THREE_BASE_PATH}/circle-texture.gif`}
                 width={800}
                 height={400}
                 alt="normal"
@@ -55,7 +56,7 @@ export default function Page(): JSX.Element {
           <Link href="/circle-texture">
             <div className="w-full h-[45vw] lg:h-[calc((90vw_-_32px_-_6px)/3/2)]">
               <Image
-                src="/circle-texture.gif"
+                src={`${THREE_BASE_PATH}/circle-texture.gif`}
                 width={800}
                 height={400}
                 alt="normal"
@@ -70,7 +71,7 @@ export default function Page(): JSX.Element {
           <Link href="/earth">
             <div className="w-full h-[45vw] lg:h-[calc((90vw_-_32px_-_6px)/3/2)]">
               <Image
-                src="/earth.gif"
+                src={`${THREE_BASE_PATH}/earth.gif`}
                 width={800}
                 height={400}
                 alt="normal"
@@ -85,7 +86,7 @@ export default function Page(): JSX.Element {
           <Link href="/dance">
             <div className="w-full h-[45vw] lg:h-[calc((90vw_-_32px_-_6px)/3/2)]">
               <Image
-                src="/dance.gif"
+                src={`${THREE_BASE_PATH}/dance.gif`}
                 width={800}
                 height={400}
                 alt="normal"

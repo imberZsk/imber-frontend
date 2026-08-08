@@ -5,6 +5,10 @@ import { ThemeProvider } from '@/components/theme-provider'
 import GsapPlugin from '@/components/gsap-plugin'
 // GoogleTagManager
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { ANIMATION_BASE_PATH } from './const'
+
+// FRONTEND_SITE_URL 表示统一前端站点的生产地址。
+const FRONTEND_SITE_URL = 'https://imber-frontend.netlify.app'
 
 export function generateMetadata(): Metadata {
   return {
@@ -13,13 +17,13 @@ export function generateMetadata(): Metadata {
       template: '%s | imber-animation'
     },
     description: 'web 动画作品展示',
-    metadataBase: new URL(`${process.env.REAL_WEBSITE_URL}`),
+    metadataBase: new URL(`${FRONTEND_SITE_URL}${ANIMATION_BASE_PATH}`),
     twitter: {
       card: 'summary_large_image',
       site: process.env.REAL_WEBSITE_URL,
       creator: '@imberZsk',
       images: {
-        url: `/avatar.jpeg`,
+        url: `${ANIMATION_BASE_PATH}/avatar.jpeg`,
         width: 1280,
         height: 640,
         alt: 'imber-animation',
@@ -28,7 +32,7 @@ export function generateMetadata(): Metadata {
     },
     openGraph: {
       type: 'website',
-      images: '/opengraph-image.jpeg'
+      images: `${ANIMATION_BASE_PATH}/opengraph-image.jpeg`
     },
     other: {
       ...Sentry.getTraceData()
@@ -45,7 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh" suppressHydrationWarning>
-      <link rel="canonical" href="https://imber.top"></link>
+      <link rel="canonical" href={`${FRONTEND_SITE_URL}${ANIMATION_BASE_PATH}`}></link>
       {/* <GoogleTagManager gtmId="GTM-NJ7PWQ3B" /> */}
       <body suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>

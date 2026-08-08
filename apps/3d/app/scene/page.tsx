@@ -2,6 +2,7 @@
 import * as THREE from 'three'
 import { useEffect } from 'react'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
+import { THREE_BASE_PATH } from '@/lib/site'
 
 export default function Home() {
   useEffect(() => {
@@ -17,12 +18,12 @@ export default function Home() {
     // 加载用于天空盒的立方体纹理
     const loader = new THREE.CubeTextureLoader()
     const texture = loader.load([
-      '/px.png', // 正X面（右）
-      '/nx.png', // 负X面（左）
-      '/py.png', // 正Y面（上）
-      '/ny.png', // 负Y面（下）
-      '/pz.png', // 正Z面（后）
-      '/nz.png' // 负Z面（前）
+      `${THREE_BASE_PATH}/px.png`, // 正X面（右）
+      `${THREE_BASE_PATH}/nx.png`, // 负X面（左）
+      `${THREE_BASE_PATH}/py.png`, // 正Y面（上）
+      `${THREE_BASE_PATH}/ny.png`, // 负Y面（下）
+      `${THREE_BASE_PATH}/pz.png`, // 正Z面（后）
+      `${THREE_BASE_PATH}/nz.png` // 负Z面（前）
     ])
 
     scene.background = texture

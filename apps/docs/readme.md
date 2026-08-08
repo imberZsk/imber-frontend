@@ -40,7 +40,7 @@
 - **建模工具：** Blender 3D 建模
 - **渲染引擎：** Three.js
 - **交互体验：** 3D 模型展示
-- **在线演示：** [https://imber-3d.netlify.app/](https://imber-3d.netlify.app/)
+- **在线演示：** [https://imber-frontend.netlify.app/3d/](https://imber-frontend.netlify.app/3d/)
 
 ## 🛠️ 技术栈
 

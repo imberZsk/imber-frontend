@@ -1,8 +1,17 @@
 import { withSentryConfig } from '@sentry/nextjs'
+
+// animationBasePath 表示动画应用在统一站点中的发布路径。
+const animationBasePath = '/animation'
+
 /** @type {import('next').NextConfig} */
+// nextConfig 配置动画应用的纯静态子路径构建。
 const nextConfig = {
   reactStrictMode: false,
+  output: 'export',
+  basePath: animationBasePath,
+  assetPrefix: animationBasePath,
   images: {
+    unoptimized: true,
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
@@ -70,8 +79,6 @@ export default withSentryConfig(nextConfig, {
   // This can increase your server load as well as your hosting bill.
   // Note: Check that the configured route will not match with your Next.js middleware, otherwise reporting of client-
   // side errors will fail.
-  tunnelRoute: '/monitoring',
-
   // Automatically tree-shake Sentry logger statements to reduce bundle size
   disableLogger: true,
 
