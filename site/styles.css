@@ -39,13 +39,13 @@ a {
   position: sticky;
   top: 0;
   z-index: 10;
-  display: flex;
-  min-height: 68px;
+  display: grid;
+  min-height: 64px;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(16, 18, 17, 0.92);
-  padding: 0 5vw;
+  padding: 0 32px;
   backdrop-filter: blur(14px);
 }
 
@@ -54,6 +54,7 @@ a {
   align-items: center;
   gap: 10px;
   font-weight: 700;
+  justify-self: start;
 }
 
 .brand img {
@@ -74,6 +75,7 @@ a {
   color: var(--muted);
   font-size: 14px;
   font-weight: 700;
+  justify-self: center;
 }
 
 .product-tabs a {
@@ -99,6 +101,7 @@ a {
   color: var(--muted);
   font-size: 13px;
   font-weight: 700;
+  justify-self: end;
 }
 
 .github-link:hover,
@@ -115,7 +118,7 @@ footer {
 
 .hero {
   display: grid;
-  min-height: calc(100vh - 68px);
+  min-height: calc(100vh - 64px);
   grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
   align-items: center;
   gap: clamp(48px, 7vw, 100px);
@@ -360,7 +363,7 @@ footer {
   }
 
   .product-tabs {
-    margin-left: auto;
+    margin: 0;
     font-size: 12px;
   }
 
