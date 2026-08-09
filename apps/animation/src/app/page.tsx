@@ -1,26 +1,82 @@
 'use client'
 
 import Link from 'next/link'
-import { useRef, useEffect, useState } from 'react'
+import { Search } from 'lucide-react'
+import type { ChangeEvent } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { navigationSections } from './const'
+
+// ANIMATION_SEARCH_PLACEHOLDER 描述动画实验搜索框可检索的内容。
+const ANIMATION_SEARCH_PLACEHOLDER = '搜索动画名称、框架或效果'
 
 /** 渲染动画实验的统一索引页。 */
 export default function Page(): JSX.Element {
+  // searchQuery 存储用户输入的动画实验搜索词。
+  const [searchQuery, setSearchQuery] = useState('')
+  // filteredSections 存储名称或标识命中搜索词的动画实验。
+  const filteredSections = useMemo(() => {
+    // normalizedQuery 存储去除首尾空格并统一为小写的搜索词。
+    const normalizedQuery = searchQuery.trim().toLocaleLowerCase()
+
+    if (!normalizedQuery) {
+      return navigationSections
+    }
+
+    return navigationSections.filter((item) => `${item.name} ${item.id}`.toLocaleLowerCase().includes(normalizedQuery))
+  }, [searchQuery])
+
+  /** 同步用户输入的动画实验搜索词。 */
+  const handleSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(event.target.value)
+  }
+
   return (
     <main className="mx-auto min-h-screen w-full max-w-[1180px] px-5 pt-28 pb-20 md:px-8 md:pt-36">
-      <header className="mb-12 grid gap-6 border-b border-[#343a36] pb-10 md:grid-cols-[1fr_360px] md:items-end">
+      <header className="mb-8 grid gap-6 border-b border-[#343a36] pb-10 md:grid-cols-[1fr_360px] md:items-end">
         <div>
           <p className="mb-4 font-mono text-xs font-bold text-[#71e6bd]">MOTION STUDIES / 22 EXPERIMENTS</p>
-          <h1 className="max-w-3xl text-4xl leading-tight font-bold text-[#f4f6f3] md:text-6xl">Web animation, studied frame by frame.</h1>
+          <h1 className="max-w-3xl text-4xl leading-tight font-bold text-[#f4f6f3] md:text-6xl">
+            Web animation, studied frame by frame.
+          </h1>
         </div>
-        <p className="m-0 text-sm leading-7 text-[#aeb6b0] md:text-base">用 GSAP 与 Framer Motion 对照拆解文字、布局、滚动和时间轴动画。选择一个实验，查看真实交互与实现源码。</p>
+        <p className="m-0 text-sm leading-7 text-[#aeb6b0] md:text-base">
+          用 GSAP 与 Framer Motion 对照拆解文字、布局、滚动和时间轴动画。选择一个实验，查看真实交互与实现源码。
+        </p>
       </header>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {navigationSections.map((item, index) => {
-          return <VideoCard key={`${item.id}-${index}`} item={item} index={index} />
-        })}
-      </div>
+      <section
+        className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+        aria-label="搜索动画实验"
+      >
+        <label className="flex h-12 w-full max-w-xl items-center gap-3 rounded-md border border-[#343a36] bg-[#191c1a] px-4 transition-colors focus-within:border-[#71e6bd]">
+          <Search className="h-4 w-4 shrink-0 text-[#71e6bd]" aria-hidden="true" />
+          <span className="sr-only">搜索动画实验</span>
+          <input
+            className="min-w-0 flex-1 bg-transparent text-sm text-[#f4f6f3] outline-none placeholder:text-[#6f7872]"
+            type="search"
+            value={searchQuery}
+            onChange={handleSearchChange}
+            placeholder={ANIMATION_SEARCH_PLACEHOLDER}
+          />
+        </label>
+        <p className="m-0 font-mono text-xs text-[#6f7872]">
+          {filteredSections.length} / {navigationSections.length} EXPERIMENTS
+        </p>
+      </section>
+
+      {filteredSections.length > 0 ? (
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {filteredSections.map((item) => {
+            // originalIndex 存储案例在完整实验列表中的稳定序号。
+            const originalIndex = navigationSections.indexOf(item)
+            return <VideoCard key={`${item.id}-${item.path}`} item={item} index={originalIndex} />
+          })}
+        </div>
+      ) : (
+        <div className="flex min-h-60 items-center justify-center rounded-lg border border-dashed border-[#343a36] text-sm text-[#aeb6b0]">
+          没有找到匹配的动画实验
+        </div>
+      )}
     </main>
   )
 }
@@ -127,7 +183,12 @@ function VideoCard({ item, index }: VideoCardProps) {
             <p className="mb-1 font-mono text-[11px] font-bold text-[#71e6bd]">{displayNumber} / MOTION</p>
             <h2 className="m-0 text-base font-semibold text-[#f4f6f3]">{item.name}</h2>
           </div>
-          <span className="text-lg text-[#6f7872] transition-transform group-hover:translate-x-1 group-hover:text-[#71e6bd]" aria-hidden="true">→</span>
+          <span
+            className="text-lg text-[#6f7872] transition-transform group-hover:translate-x-1 group-hover:text-[#71e6bd]"
+            aria-hidden="true"
+          >
+            →
+          </span>
         </div>
       </Link>
     </article>
