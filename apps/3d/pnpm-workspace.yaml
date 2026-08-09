@@ -1,30 +1,18 @@
-ignoredBuiltDependencies:
-  - '@tailwindcss/oxide'
-
 overrides:
   # 传递依赖的上游约束尚未全部包含安全补丁，按主版本固定以避免跨主版本破坏兼容性。
-  '@babel/core@^7.0.0': 7.29.7
   '@babel/runtime@^7.0.0': 7.29.7
-  '@opentelemetry/core@^2.0.0': 2.10.0
   'brace-expansion@^1.0.0': 1.1.18
   'brace-expansion@^2.0.0': 2.1.4
   'braces@^3.0.0': 3.0.3
   'cross-spawn@^7.0.0': 7.0.6
   'flatted@^3.0.0': 3.4.4
+  'glob@^10.0.0': 10.5.0
   'js-yaml@^4.0.0': 4.3.1
   'micromatch@^4.0.0': 4.0.8
   'minimatch@^3.0.0': 3.1.5
-  'minimatch@^8.0.0': 8.0.7
   'minimatch@^9.0.0': 9.0.9
   'nanoid@^3.0.0': 3.3.18
   'picomatch@^2.0.0': 2.3.2
-  'picomatch@^4.0.0': 4.0.5
   'postcss@^8.0.0': 8.5.26
-  'prismjs@^1.0.0': 1.30.0
-  'rollup@^4.0.0': 4.62.4
-  serialize-javascript: 7.0.5
   sharp: 0.35.3
-  'tar@^7.0.0': 7.5.22
-  uuid: 11.1.1
-  'webpack@^5.0.0': 5.109.2
   'yaml@^2.0.0': 2.9.0

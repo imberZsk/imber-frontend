@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element -- 头像由统一站点根路径提供，不能继承当前应用 basePath。 */
+/* eslint-disable @next/next/no-img-element, @next/next/no-html-link-for-pages -- 统一站点资源和跨子应用导航不能继承当前应用 basePath。 */
 import { Github } from 'lucide-react'
 
 /** 渲染统一站点的产品级导航，并标识 3D 为当前区域。 */

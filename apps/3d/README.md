@@ -22,7 +22,7 @@ imber-3d/
 │   ├── circle-texture/    # 全景贴图效果（3D看房）
 │   ├── earth/             # 3D地球
 │   └── dance/             # 跳舞动画
-├── 360-house-viewing-main/ # Vue 版本（360度看房）
+├── 360-house-viewing-main/ # 已归档的 Vue 2 源码参考
 ├── components/            # 共享组件
 ├── public/               # 静态资源
 └── lib/                  # 工具库
@@ -32,19 +32,11 @@ imber-3d/
 
 ### Next.js 版本
 
-- **框架**: Next.js 14.2.3
+- **框架**: Next.js 15.5.23
 - **3D 引擎**: Three.js 0.164.1
 - **UI 组件**: Radix UI
 - **样式**: Tailwind CSS
 - **语言**: TypeScript
-
-### Vue 版本
-
-- **框架**: Vue 2.6.11
-- **3D 引擎**: Three.js 0.135.0
-- **动画**: GSAP 3.9.0
-- **状态管理**: Vuex
-- **路由**: Vue Router
 
 ## 🚀 快速开始
 
@@ -70,31 +62,6 @@ imber-3d/
    ```bash
    npm run build
    npm run start
-   ```
-
-### Vue 版本
-
-1. **进入 Vue 项目目录**
-
-   ```bash
-   cd 360-house-viewing-main
-   ```
-
-2. **安装依赖**
-
-   ```bash
-   npm install
-   ```
-
-3. **启动开发服务器**
-
-   ```bash
-   npm run serve
-   ```
-
-4. **构建生产版本**
-   ```bash
-   npm run build
    ```
 
 ## 📱 演示内容
@@ -135,8 +102,8 @@ imber-3d/
 
 - `three`: 3D 图形库
 - `next`: React 全栈框架
-- `vue`: 渐进式 JavaScript 框架
-- `gsap`: 动画库（Vue 版本）
+
+`360-house-viewing-main` 仅保留源码作为历史参考，不再单独安装或构建；当前维护的全景看房案例位于 `/circle-texture`。
 
 ### 开发工具
 
