@@ -1,0 +1,143 @@
+:root {
+  --lab-header-height: 64px;
+  --vp-c-bg: #101211;
+  --vp-c-bg-alt: #151816;
+  --vp-c-bg-elv: #191c1a;
+  --vp-c-bg-soft: #191c1a;
+  --vp-c-border: #343a36;
+  --vp-c-divider: #343a36;
+  --vp-c-gutter: #101211;
+  --vp-c-text-1: #f4f6f3;
+  --vp-c-text-2: #aeb6b0;
+  --vp-c-text-3: #6f7872;
+  --vp-c-brand-1: #71e6bd;
+  --vp-c-brand-2: #71e6bd;
+  --vp-c-brand-3: #52cfa4;
+  --vp-button-brand-bg: #71e6bd;
+  --vp-button-brand-text: #0d211a;
+  --vp-button-brand-hover-bg: #8bedca;
+  --vp-code-block-bg: #0b0d0c;
+}
+
+.lab-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  display: flex;
+  height: var(--lab-header-height);
+  align-items: center;
+  border-bottom: 1px solid #343a36;
+  background: rgba(16, 18, 17, 0.95);
+  padding: 0 32px;
+  backdrop-filter: blur(14px);
+}
+
+.lab-brand {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 10px;
+  color: #f4f6f3;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lab-brand img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.lab-tabs {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 4px;
+  overflow-x: auto;
+  margin: 0 auto;
+  border: 1px solid #343a36;
+  border-radius: 6px;
+  background: #191c1a;
+  padding: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lab-tabs a {
+  border-radius: 4px;
+  padding: 8px 12px;
+  color: #aeb6b0;
+  white-space: nowrap;
+}
+
+.lab-tabs a:hover {
+  color: #f4f6f3;
+}
+
+.lab-tabs a.active {
+  background: #71e6bd;
+  color: #0d211a;
+}
+
+.lab-github {
+  flex-shrink: 0;
+  border: 1px solid #343a36;
+  border-radius: 6px;
+  padding: 9px 13px;
+  color: #aeb6b0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.lab-github:hover {
+  border-color: #71e6bd;
+  color: #71e6bd;
+}
+
+.VPNav {
+  top: var(--lab-header-height) !important;
+}
+
+.VPSidebar {
+  top: var(--lab-header-height) !important;
+}
+
+.VPContent {
+  padding-top: var(--lab-header-height);
+}
+
+.VPNavBar {
+  border-bottom-color: #343a36 !important;
+  background: rgba(21, 24, 22, 0.96) !important;
+}
+
+.VPFeature {
+  border-radius: 8px !important;
+  border-color: #343a36 !important;
+  background: #191c1a !important;
+}
+
+.VPButton {
+  border-radius: 6px !important;
+}
+
+@media (max-width: 640px) {
+  .lab-header {
+    padding: 0 12px;
+  }
+
+  .lab-brand span,
+  .lab-github {
+    display: none;
+  }
+
+  .lab-tabs {
+    margin-right: 0;
+    font-size: 12px;
+  }
+
+  .lab-tabs a {
+    padding: 8px 10px;
+  }
+}

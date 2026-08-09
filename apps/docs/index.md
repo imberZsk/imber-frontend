@@ -3,8 +3,9 @@
 layout: home
 
 hero:
-  name: 'imber Docs'
-  tagline: '新写的博客：<a href="https://imber.netlify.app/" target="_blank">https://imber.netlify.app/</a>'
+  name: 'Frontend Docs'
+  text: '工程实践与技术笔记'
+  tagline: '从 React、Next.js 到编辑器、动画与 AI 编程，记录可复用的实现与思考。'
   actions:
     - theme: brand
       text: Nextjs

@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  margin: 0;
+  background: #101211;
+  color: #f4f6f3;
+}
+
+::selection {
+  background: #71e6bd;
+  color: #0d211a;
+}
+
 :root {
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;
