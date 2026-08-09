@@ -1,6 +1,6 @@
 ## Docker
 
-![alt text](docker-0.png)
+![alt text](docker-0.webp)
 
 ## 资源
 

@@ -101,7 +101,7 @@ gsap.to('.box', {
 })
 ```
 
-![alt text](stagger.gif)
+![alt text](stagger.webp)
 
 ## 时间轴（Timeline）
 

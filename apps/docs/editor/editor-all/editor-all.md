@@ -144,7 +144,7 @@ TODO:黑色模式光标有问题，后续可能不要这个功能改为点击空
 
 ## AI 功能 🔥
 
-![alt text](editor-all-1.gif)
+![alt text](editor-all-1.webp)
 
 ## Image 上传
 

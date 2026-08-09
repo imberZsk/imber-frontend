@@ -18,7 +18,7 @@ import Image from 'next/image'
 - 使用 flex,grid,百分比布局
 - 需要特别注意的是 tailwind 中需要移动端优先
 
-<video src="/posts/responsive/media2.mov" controls />
+<video src="/posts/responsive/media2.mp4" controls />
 
 ### 移动端优先
 
@@ -261,7 +261,7 @@ export default function App() {
 
 1、规则的响应式布局
 
-<video src="/posts/responsive/media2.mov" controls />
+<video src="/posts/responsive/media2.mp4" controls />
 
 对于规则的布局，可以使用 flex，grid 布局，来实现图片的响应式，上面的代码就是 grid 布局，注意的是外层有一个 container，里面的图片需要定好宽高比
 

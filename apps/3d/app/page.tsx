@@ -19,9 +19,9 @@ interface ThreeDemo {
 // THREE_DEMOS 存储 3D 实验首页展示的场景信息与入口。
 const THREE_DEMOS: ThreeDemo[] = [
   { index: '01', title: '基础场景', description: '从相机、光源和几何体开始理解 Three.js 渲染循环。', image: 'normal.gif', path: '/normal', type: 'FOUNDATION' },
-  { index: '02', title: '立方体场景', description: '用六面纹理构建可自由观察的空间环境。', image: 'circle-texture.gif', path: '/scene', type: 'ENVIRONMENT' },
-  { index: '03', title: '天空盒', description: '将环境纹理映射到立方体内侧，形成沉浸式背景。', image: 'skybox.gif', path: '/sky-box', type: 'ENVIRONMENT' },
-  { index: '04', title: '全景看房', description: '球面贴图结合 OrbitControls，模拟室内全景浏览。', image: 'circle-texture.gif', path: '/circle-texture', type: 'PANORAMA' },
+  { index: '02', title: '立方体场景', description: '用六面纹理构建可自由观察的空间环境。', image: 'circle-texture.webp', path: '/scene', type: 'ENVIRONMENT' },
+  { index: '03', title: '天空盒', description: '将环境纹理映射到立方体内侧，形成沉浸式背景。', image: 'skybox.webp', path: '/sky-box', type: 'ENVIRONMENT' },
+  { index: '04', title: '全景看房', description: '球面贴图结合 OrbitControls，模拟室内全景浏览。', image: 'circle-texture.webp', path: '/circle-texture', type: 'PANORAMA' },
   { index: '05', title: '数据地球', description: '加载 GLTF 点阵模型并持续渲染地球旋转动画。', image: 'earth.gif', path: '/earth', type: 'GLTF' },
   { index: '06', title: '角色动画', description: '加载 FBX 模型与骨骼动画，展示实时角色动作。', image: 'dance.gif', path: '/dance', type: 'FBX' }
 ]
