@@ -25,4 +25,4 @@ tip 做协同的后台 node 项目，[hocuspocus](https://github.com/ueberdosis/
 ![alt text](image-3.png)
 
 tiptap:
-![alt text](image-4.png)
+![alt text](image-4.webp)

@@ -10,7 +10,7 @@
 
 因为部门项目以 C 端 React 为主，所以使用 Nextjs，写法为 [App router](https://nextjs.org/docs)，以汽车官网为例，性能极佳
 
-![alt text](image.png)
+![alt text](image.webp)
 
 CSS 统一使用 [TailwindCSS](https://www.tailwindcss.cn/)，组件库使用基于 [radix-ui](https://www.radix-ui.com/primitives/docs/overview/introduction) 的 [shadcn](https://ui.shadcn.com/docs/components/date-picker)，他们搭配可以极大的减少 CSS 体积和提高编写 CSS 的工作效率
 

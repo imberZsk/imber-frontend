@@ -32,7 +32,7 @@ export default {
       },
       dataList: [
         {
-          image: require("@/assets/image/livingRoom.jpg"),
+          image: require("@/assets/image/livingRoom.webp"),
           tipsList: [
             {
               position: { x: -200, y: -4, z: -147 },
@@ -92,7 +92,7 @@ export default {
           ],
         },
         {
-          image: require("@/assets/image/kitchen.jpg"),
+          image: require("@/assets/image/kitchen.webp"),
           tipsList: [
             {
               position: { x: -199, y: -24, z: 145 },

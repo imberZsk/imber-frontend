@@ -12,7 +12,7 @@ import { Image } from 'next/image'
 - 使用 rem 或者 vw 单位
 - 适用于营销活动页面，适配移动端 H5，Hybird，PC端是看到的移动端页面
 
-<video src="/posts/responsive/media3.mov" controls />
+<video src="/posts/responsive/media3.mp4" controls />
 
 响应式布局：
 
@@ -21,7 +21,7 @@ import { Image } from 'next/image'
 - 使用flex,grid,百分比布局
 - 需要特别注意的是 tailwind 中需要移动端优先
 
-<video src="/posts/responsive/media2.mov" controls />
+<video src="/posts/responsive/media2.mp4" controls />
 
 ### 自适应布局实现
 

@@ -260,7 +260,7 @@ export const uploadImageToGitHubApi = async (file: File, path: string, base64Con
 
 ### 瀑布流
 
-![页面截图 - 图片上传](/posts/gallery/image1.png)
+![页面截图 - 图片上传](/posts/gallery/image1.webp)
 
 前提是需要提供图片视频的宽高，根据宽度和宽高比，可以计算出 item 元素的显示宽高；核心逻辑是计算出根据最小宽度、间隙、容器宽度，计算出列数和 itemWidth，根据列数初始化一个数组用于存每一列的高度，在遍历的时候，累加这个高度，计算元素的 left 偏移值 = 最小列数的索引 \* itemWidth + 最小列数的索引 \* gap；计算 top 偏移值 = 数组中最小列数的高度；
 

@@ -25,7 +25,7 @@
 
 #### 首页
 
-![alt text](select-1.png)
+![alt text](select-1.webp)
 
 - `Product` 里是 `tiptap` 几个厉害的功能(AI、协同、评论、一些 pro 拓展)，可以登陆它的云平台然后使用，也是免费
 - `Blog` 是一些更新功能的博客

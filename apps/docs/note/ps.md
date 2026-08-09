@@ -13,7 +13,7 @@ https://www.yuque.com/u37186489/tgrg5b/fycck0a8qcbsiqqp
 
 字体工具快捷键 t，后面发现用蓝湖自动标注就好了
 
-![alt text](image-14.jpg)
+![alt text](image-14.webp)
 
 首先可能设计师用了特殊的字体，所以我要一份字体，但是安装后得重启电脑重新打开 ps 才行
 
@@ -49,7 +49,7 @@ https://www.yuque.com/u37186489/tgrg5b/fycck0a8qcbsiqqp
 
 想要在蓝湖上有切图，需要选中图层，然后紧贴元素切图
 
-![alt text](image-23.png)
+![alt text](image-23.webp)
 
 ## 插件
 

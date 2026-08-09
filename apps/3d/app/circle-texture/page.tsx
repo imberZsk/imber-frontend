@@ -18,7 +18,7 @@ export default function Home() {
     camera.position.z = 5
 
     const sphere = new THREE.SphereGeometry(16, 50, 50)
-    const texture = new THREE.TextureLoader().load(`${THREE_BASE_PATH}/livingRoom.jpg`)
+    const texture = new THREE.TextureLoader().load(`${THREE_BASE_PATH}/livingRoom.webp`)
     const material = new THREE.MeshBasicMaterial({ map: texture })
     const sphereMesh = new THREE.Mesh(sphere, material)
     sphere.scale(16, 16, -16)
@@ -38,7 +38,7 @@ export default function Home() {
 
     const dataList = [
       {
-        image: `${THREE_BASE_PATH}/livingRoom.jpg`,
+        image: `${THREE_BASE_PATH}/livingRoom.webp`,
         tipsList: [
           {
             position: { x: -200, y: -4, z: -147 },

@@ -183,7 +183,7 @@ gsap.timeline({
 
 我保留了 `toggleActions`，因为它的值可以控制动画的播放，同时也和 `onEnter onLeave onEnterBack onLeaveBack` 触发时间一致，用 `markers:true` 多去看看，就能实现下面这种定位效果：
 
-![alt text](home.gif)
+![alt text](home.webp)
 
 下面是一段伪代码做参考：
 
@@ -243,7 +243,7 @@ useGSAP(() => {
 
 onUpdate 也很有用，这里用它拿到 progress 进度，就可以自己切换轮播图，如下面效果，只用鼠标滚轮，不用鼠标拖动：
 
-![alt text](swiper.gif)
+![alt text](swiper.webp)
 
 下面是一段伪代码做参考：
 
@@ -344,4 +344,4 @@ framer motion 提供了 `AnimatePresence` 这个组件，可以解决这个问�
 
 就可以实现比如 h5 的下拉动画：
 
-![alt text](h5.gif)
+![alt text](h5.webp)
