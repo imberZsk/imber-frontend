@@ -9,15 +9,29 @@ export default defineConfig({
     assetsInclude: ['**/*.mov', '**/*.mp4', '**/*.webm']
   },
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Docs Home', link: '/' },
-      { text: 'Notes', link: '/note/next-note1' },
-      { text: 'React', link: '/react/base' },
-      { text: 'Next.js', link: '/next/next-project' },
-      { text: 'Editor', link: '/editor/selection' }
-      // { text: 'Cli', link: '/cli/cli/intro' }
-    ],
+    search: {
+      provider: 'local',
+      options: {
+        detailedView: false,
+        disableQueryPersistence: true,
+        translations: {
+          button: {
+            buttonText: '搜索文档',
+            buttonAriaLabel: '搜索文档'
+          },
+          modal: {
+            noResultsText: '没有找到相关文章',
+            resetButtonTitle: '清除搜索',
+            backButtonTitle: '关闭搜索',
+            footer: {
+              selectText: '选择',
+              navigateText: '切换',
+              closeText: '关闭'
+            }
+          }
+        }
+      }
+    },
 
     sidebar: {
       '/note/': { base: '/note/', items: sidebarNote() },
@@ -27,8 +41,6 @@ export default defineConfig({
       '/animation/': { base: '/animation/', items: sidebarAnimate() },
       '/cli/': { base: '/cli/', items: sidebarCli() }
     },
-
-    socialLinks: [{ icon: 'github', link: 'https://github.com/imberZsk' }]
   }
 })
 
