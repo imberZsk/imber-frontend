@@ -1,5 +1,8 @@
 import { globby } from 'globby'
 
+// STATIC_RENDER_MODE 确保静态导出模式在构建期生成 sitemap.xml。
+export const dynamic = 'force-static'
+
 function addPage(page: string) {
   const path = page
     .replace('app', '')

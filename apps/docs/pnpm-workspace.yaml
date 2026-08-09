@@ -1,0 +1,4 @@
+overrides:
+  # VitePress 的上游约束仍允许命中旧版构建依赖，固定到已修复版本。
+  esbuild: 0.25.12
+  vite: 6.4.3
