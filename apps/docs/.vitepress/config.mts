@@ -3,21 +3,19 @@ import { defineConfig, type DefaultTheme } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/docs/',
-  title: 'imber',
-  description: 'A VitePress Site',
+  title: 'Frontend Docs',
+  description: 'Imber Frontend 技术文档与工程笔记',
   vite: {
     assetsInclude: ['**/*.mov', '**/*.mp4', '**/*.webm']
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: '小记', link: '/note/next-note1' },
+      { text: 'Docs Home', link: '/' },
+      { text: 'Notes', link: '/note/next-note1' },
       { text: 'React', link: '/react/base' },
-      { text: 'Nextjs', link: '/next/next-project' },
-      { text: 'Editor', link: '/editor/selection' },
-      { text: 'Web Animation', link: '/animation/gsap/useGSAP' },
-      { text: 'Web 3D', link: 'https://imber-frontend.netlify.app/3d/' }
+      { text: 'Next.js', link: '/next/next-project' },
+      { text: 'Editor', link: '/editor/selection' }
       // { text: 'Cli', link: '/cli/cli/intro' }
     ],
 

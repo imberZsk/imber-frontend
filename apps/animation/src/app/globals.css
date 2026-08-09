@@ -1,6 +1,22 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  margin: 0;
+  background: #101211;
+  color: #f4f6f3;
+}
+
+::selection {
+  background: #71e6bd;
+  color: #0d211a;
+}
+
 .flex-center {
   @apply flex items-center justify-center;
 }

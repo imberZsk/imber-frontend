@@ -6,6 +6,7 @@ import GsapPlugin from '@/components/gsap-plugin'
 // GoogleTagManager
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { ANIMATION_BASE_PATH } from './const'
+import LabHeader from '@/components/lab-header'
 
 // FRONTEND_SITE_URL 表示统一前端站点的生产地址。
 const FRONTEND_SITE_URL = 'https://imber-frontend.netlify.app'
@@ -53,6 +54,7 @@ export default function RootLayout({
       {/* <GoogleTagManager gtmId="GTM-NJ7PWQ3B" /> */}
       <body suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
+          <LabHeader />
           {modal}
           {children}
         </ThemeProvider>
