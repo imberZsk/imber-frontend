@@ -39,8 +39,8 @@ importers:
         specifier: ^2.1.2
         version: 2.1.2(gsap@3.15.0)(react@18.3.1)
       '@next/third-parties':
-        specifier: ^15.5.23
-        version: 15.5.23(next@15.5.23(@babel/core@7.29.7)(@opentelemetry/api@1.9.1)(@types/node@20.12.10)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+        specifier: ^16.3.0
+        version: 16.3.0(next@15.5.23(@babel/core@7.29.7)(@opentelemetry/api@1.9.1)(@types/node@20.12.10)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-dialog':
         specifier: ^1.1.23
         version: 1.1.23(@types/react-dom@18.3.0)(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -624,10 +624,10 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@next/third-parties@15.5.23':
-    resolution: {integrity: sha512-N19pcV98JmU/u6v8Seg/FxyTFVmFzXb2nDhWis4ubXloWHgrNC/RQT+O+JemH4RZ2zta8SZCxnQducdXjy7AkQ==}
+  '@next/third-parties@16.3.0':
+    resolution: {integrity: sha512-cAA96hSI9NC7083b6sEsKjgyvM/YJ2eqXs4HWv8a/z5LE12CL1sUJS+cmcTwNMY4yAFpLyyuZHrMBEfh/4Xupw==}
     peerDependencies:
-      next: ^13.0.0 || ^14.0.0 || ^15.0.0
+      next: ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0-beta.0
       react: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
 
   '@nodelib/fs.scandir@2.1.5':
@@ -4429,7 +4429,7 @@ snapshots:
   '@next/swc-win32-x64-msvc@15.5.23':
     optional: true
 
-  '@next/third-parties@15.5.23(next@15.5.23(@babel/core@7.29.7)(@opentelemetry/api@1.9.1)(@types/node@20.12.10)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
+  '@next/third-parties@16.3.0(next@15.5.23(@babel/core@7.29.7)(@opentelemetry/api@1.9.1)(@types/node@20.12.10)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
     dependencies:
       next: 15.5.23(@babel/core@7.29.7)(@opentelemetry/api@1.9.1)(@types/node@20.12.10)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
